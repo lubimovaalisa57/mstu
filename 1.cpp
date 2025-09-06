@@ -13,3 +13,9 @@ int main()
     }
     return 0;
 }
+
+// cd Desktop
+// cd git
+// git add *
+// git commit -m "Комментарий (имя фамилия группа)"
+// git push
