@@ -1,17 +1,16 @@
 #include <iostream>
-//using namespace std;
-int main()
+
+int main() 
 {
     int a;
     std::cin>>a;
-    if (a >50) {
-        std::cout << "Топлива достаточно" << std::endl;
-    } else if (a < 20) {
-        std::cout << "Топливо на исходе, срочно заправьтесь!." << std::endl;
-    } else {
-        std::cout << "Рекомендуется заправка" << std::endl;
-    }
-    return 0;
+    int b = 10;
+    int c = a / b;
+    int d = a % b;
+
+    std::cout<<"сантиметров милиметров"<<std::endl;
+return 0;
+
 }
 
 // cd Desktop
