@@ -4,11 +4,11 @@ int main()
 {
     int a;
     std::cin>>a;
-    int b = 10;
+    int b = 100;
     int c = a / b;
     int d = a % b;
 
-    std::cout<<"сантиметров "<< c<<" милиметров "<<d<<std::endl;
+    std::cout<<"метров "<< c<<" сантиметров "<<d<<std::endl;
 return 0;
 
 }
