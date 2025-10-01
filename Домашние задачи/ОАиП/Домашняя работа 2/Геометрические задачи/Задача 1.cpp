@@ -2,7 +2,7 @@
 
 int main()
 {
-    int arr[3][2];s
+    int arr[3][2];
      for (int i = 0; i < 3; i++) {
         std::cout << "Вершина " << (i + 1) << " (x y): ";
         std::cin >> arr[i][0] >> arr[i][1];
