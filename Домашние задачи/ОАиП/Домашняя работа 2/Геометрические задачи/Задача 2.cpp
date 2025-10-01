@@ -12,26 +12,18 @@ int main()
     int x3 = arr[2][0], y3 = arr[2][1];
     int x4 = arr[3][0], y4 = arr[3][1];
 
-    int length = sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y));
+    int length_1 = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    int length_2 = sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
+    int length_3 = sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
+    int length_4 = sqrt((x1 - x4) * (x1 - x4) + (y1 - y4) * (y1 - y4));
 
-
+   
+    int P = length_1 + length_2 + length_3 + length_4;
     
-    // Вычисляем периметр
-    int P = 0;
     
-    // Складываем расстояния между последовательными вершинами
-    for (int i = 0; i < 4; i++) {
-        int j = (i + 1) % 4; // следующая вершина (для связи последней с первой)
-        double side = distance(vertices[i], vertices[j]);
-        perimeter += side;
-        
-        // Выводим длину каждой стороны (опционально)
-        cout << "Сторона " << (i + 1) << "-" << (j + 1) << ": " << side << endl;
-    }
     
-    cout << fixed << setprecision(2);
-    cout << "Периметр четырехугольника: " << perimeter << endl;
+    std::cout << "Периметр четырехугольника: " << P << std::
+    endl;
     
     return 0;
-}
 }
