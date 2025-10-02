@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 int main() 
 {
     double arr[15];
@@ -46,7 +45,7 @@ int main()
     for (int i = 0; i < 15; i++) {
         std::cout << arr[i] << " ";
     }
-    std::cout << std::endl;
+std::cout << std::endl;
     
     return 0;
 }
