@@ -14,7 +14,7 @@ int main()
     double x3 = arr[2][0], y3 = arr[2][1];
 
     
-    double det = arr[0][0] * (arr[1][1] - arr[2][1]) + arr[1][0] * (arr[2][1] - arr[0][1]) + arr[2][0] * (arr[0][1] - arr[1][1]);
+    double det = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
     
     std::cout << "Определитель: " << det << std::endl;
     
