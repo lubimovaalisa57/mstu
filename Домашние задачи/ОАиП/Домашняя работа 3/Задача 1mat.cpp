@@ -15,8 +15,8 @@ int main()
     }
     
     // Создаем 4 матрицы для отражений
-    int main_diag[100][100], side_diag[100][100];
-    int vertical[100][100], horizontal[100][100];
+    int main_diag[N][N], side_diag[N][N];
+    int vertical[N][N], horizontal[N][N];
     
     // Заполняем матрицы отражений
     for (int i = 0; i < N; i++) {
