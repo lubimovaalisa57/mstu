@@ -56,17 +56,24 @@ int main()
     double A = detA / det;
     double B = detB / det;
     double C = detC / det;
-    double D = detD / det;
+    double D = (-detD / det);
     
     // Вычисляем центр и радиус сферы
-    double x0 = -A / 2;
-    double y0 = -B / 2;
-    double z0 = -C / 2;
+    double x0 = (A / 2);
+    double y0 = (B / 2);
+    double z0 = (C / 2);
     double r = sqrt(x0*x0 + y0*y0 + z0*z0 - D);
-    
+
     std::cout << "Уравнение сферы:" << std::endl;
     std::cout << "x² + y² + z² + " << A << "x + " << B << "y + " << C << "z + " << D << " = 0" << std::endl;
-    std::cout << "Центр: (" << x0 << ", " << y0 << ", " << z0 << ")" << std::endl;
+    
+    if (x0==0, y0==0, z0==0){
+        std::cout << "Центр: (" << 0 << ", " << 0 << ", " << 0 << ")" << std::endl;
+    }
+    else{
+        std::cout << "Центр: (" << x0 << ", " << y0 << ", " << z0 << ")" << std::endl;
+    }
+    
     std::cout << "Радиус: " << r << std::endl;
     
     return 0;
