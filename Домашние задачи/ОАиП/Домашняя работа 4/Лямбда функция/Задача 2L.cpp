@@ -3,10 +3,11 @@
 #include <algorithm>
 
 int main() {
-    std::vector<int> numbers(10);
+   std::vector<int> numbers(10);
     
+    std::cout << "Введите 10 элементов вектора: ";
     for (int i = 0; i < 10; ++i) {
-        numbers[i] = i + 1;
+        std::cin >> numbers[i];
     }
     
     std::cout << "Исходный вектор: ";
