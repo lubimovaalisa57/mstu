@@ -10,9 +10,9 @@ int main()
     char* words[100];
     int word_count = 0;
     char* token = strtok(str, " ");
-    while (token != nullptr && word_count < 100) {
+    while (token != NULL && word_count < 100) {
         words[word_count++] = token;
-        token = strtok(nullptr, " ");
+        token = strtok(NULL, " ");
     }
     
     char shortest_common[100] = "";
