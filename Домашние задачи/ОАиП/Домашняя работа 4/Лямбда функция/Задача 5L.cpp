@@ -11,14 +11,27 @@ int main()
         std::cin >> numbers[i];
     }
     
-    auto minmax = std::minmax_element(numbers.begin(), numbers.end());
-    std::cout << "Минимальное значение: " << *minmax.first << std::endl;
-    std::cout << "Максимальное значение: " << *minmax.second << std::endl;
+    // Находим минимальное число
+    double min_value = numbers[0];
+    for (int i = 1; i < 20; ++i) {
+        if (numbers[i] < min_value) {
+            min_value = numbers[i];
+        }
+    }
     
+    // Находим максимальное число
+    double max_value = numbers[0];
+    for (int i = 1; i < 20; ++i) {
+        if (numbers[i] > max_value) {
+            max_value = numbers[i];
+        }
+    }
+    
+    // Считаем среднее значение
     double sum = std::accumulate(numbers.begin(), numbers.end(), 0.0);
     double average = sum / numbers.size();
-    std::cout << "Среднее значение: " << average << std::endl;
     
+    // Находим медиану
     std::vector<double> sorted_numbers = numbers;
     std::sort(sorted_numbers.begin(), sorted_numbers.end());
     
@@ -30,6 +43,10 @@ int main()
         median = sorted_numbers[sorted_numbers.size()/2];
     }
     
+    // Выводим результаты
+    std::cout << "Минимальное число: " << min_value << std::endl;
+    std::cout << "Максимальное число: " << max_value << std::endl;
+    std::cout << "Среднее значение: " << average << std::endl;
     std::cout << "Медиана: " << median << std::endl;
     
     return 0;
