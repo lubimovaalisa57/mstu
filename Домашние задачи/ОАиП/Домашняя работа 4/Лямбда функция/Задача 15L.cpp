@@ -89,7 +89,7 @@ int main()
     
     auto max_var_it = std::max_element(temp_variation.begin(), temp_variation.end());
     int max_var_channel = std::distance(temp_variation.begin(), max_var_it);
-    std::cout << "\nКанал с наибольшей вариацией температуры: " << max_var_channel 
+    std::cout << "Канал с наибольшей вариацией температуры: " << max_var_channel 
               << " (вариация: " << *max_var_it << "°C)" << std::endl;
     
     // Нормализация давлений
@@ -104,7 +104,7 @@ int main()
     }
     
     // Пики давления после нормализации (> 0.9)
-    std::cout << "\nПики давления (нормализованные > 0.9):" << std::endl;
+    std::cout << "Пики давления (нормализованные > 0.9):" << std::endl;
     for (int i = 0; i < 5; ++i) {
         std::cout << "Канал " << i << ": ";
         std::for_each(normalized_pressure[i].begin(), normalized_pressure[i].end(),
@@ -122,7 +122,7 @@ int main()
     std::sort(indices.begin(), indices.end(),
              [&avg_temp](int a, int b) { return avg_temp[a] > avg_temp[b]; });
     
-    std::cout << "\nКанал с максимальной средней температурой: " << indices[0] 
+    std::cout << "Канал с максимальной средней температурой: " << indices[0] 
               << " (температура: " << avg_temp[indices[0]] << "°C)" << std::endl;
     
     return 0;
