@@ -117,6 +117,12 @@ WHERE id = 1;
 -- Проверка обновления
 SELECT name, registration_date FROM users WHERE id = 1;
 
+-- Удаление данных о пользователе и всех связанных записей о выданных книгах
+DELETE FROM borrowed_books 
+WHERE user_id = 1;
+DELETE FROM users 
+WHERE id = 1;
+
 -- Просмотр всех данных (для проверки)
 SELECT '=== ВСЕ АВТОРЫ ===';
 SELECT * FROM authors;
