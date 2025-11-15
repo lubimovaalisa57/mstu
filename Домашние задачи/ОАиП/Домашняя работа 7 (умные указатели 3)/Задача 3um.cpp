@@ -1,30 +1,20 @@
 #include <iostream>
 #include <memory>
 
-// Функция заполнения массива квадратами индексов
 void fillArray(std::unique_ptr<int[]>& arr, int n) 
 {
-    for (int i = 0; i < n; ++i) {
-        arr[i] = i * i;  // Заполняем квадратами индексов
-    }
+    for (int i = 0; i < n; i++)
+        arr[i] = i * i;  // Квадраты индексов
 }
 
 int main() 
 {
     int n;
-    std::cout << "Введите размер массива: ";
     std::cin >> n;
-    
-    // Создаем умный указатель на массив
     std::unique_ptr<int[]> arr = std::make_unique<int[]>(n);
+    fillArray(arr, n);  // Передача по ссылке
     
-    // Передаем массив по ссылке в функцию для заполнения
-    fillArray(arr, n);
-    
-    std::cout << "Массив квадратов индексов: " << std::endl;;
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++)
         std::cout << arr[i] << " ";
-    }
-    
     return 0;
 }
