@@ -383,6 +383,6 @@ int main() {
         }
 
     } while (choice != 0);
-
+пше
     return 0;
 }
