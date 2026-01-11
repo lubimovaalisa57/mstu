@@ -16,7 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="101f283c-8c2a-4ca1-881d-c743ac23b0aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Экзаменационная задача по информатикеё/OnlineStore/reports/report.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Экзаменационная задача по информатикеё/OnlineStore/sql/01_tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
       <workItem from="1767637116653" duration="5010000" />
       <workItem from="1767876029647" duration="2672000" />
       <workItem from="1767871514498" duration="7560000" />
-      <workItem from="1767893629349" duration="20586000" />
+      <workItem from="1767893629349" duration="19859000" />
     </task>
     <servers />
   </component>
